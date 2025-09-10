@@ -4,7 +4,7 @@ import threading
 from encryptor import encrypt, decrypt
 
 HOST = input("Enter host IP: ")
-PORT = 5000
+PORT = int(input("Enter host port: "))
 nickname = input("Enter your nickname: ")
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
