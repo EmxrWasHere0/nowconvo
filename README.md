@@ -13,4 +13,4 @@
 <p align="center">You can find every documents at <a href="docs/">here</a>.</p>
 <hr>
 <h1 align="center">Download</h1>
-<p align="center">You can clone the repository with <code>git clone</code> if you have Python installed.<br>If you don't, you can go to <a href="https://github.com/EmxrWasHere0/nowconvo/releases">Releases tab</a> and download the latest NowConvo version according to your operating system.</p>
+<p align="center">You can clone the repository with <code>git clone</code> if you have Python installed.<br>If you don't, you can wait the release.</p>
