@@ -10,7 +10,7 @@
 <p align="center">NowConvo relies on NowCrypt to encrypt and decrypt your messages. Also to prevent unknown guests, there's a authentication system called hostword which required at connecting.</p>
 <hr>
 <h1 align="center">Instructions and Documentation</h1>
-<p align="center">You can find every documents at <a href="docs/">here</a>.</p>
+<p align="center">They are not available right now..</p>
 <hr>
 <h1 align="center">Download</h1>
 <p align="center">You can clone the repository with <code>git clone</code> if you have Python installed.<br>If you don't, you can wait the release.</p>
