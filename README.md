@@ -7,7 +7,7 @@
 <p align="center">NowConvo does not use any dedicated server, it uses host's device to get and forward messages. Holds the chat history and after the conversation ends, it gets saved to host's device.</p>
 <hr>
 <h1 align="center">Privacy</h1>
-<p align="center">NowConvo relies on NowCrypt to encrypt and decrypt your messages. Also to prevent unknown guests, there's a authentication system called hostword which required at connecting.</p>
+<p align="center">NowConvo relies on NowCrypt to encrypt and decrypt your messages. Also to prevent unknown guests, there's an authentication system called hostword which required at connecting.</p>
 <hr>
 <h1 align="center">Instructions and Documentation</h1>
 <p align="center">They are not available right now..</p>
