@@ -2,11 +2,15 @@
 import socket
 import threading
 from encryptor import encrypt, decrypt
+import sys
 
 HOST = '0.0.0.0'  # Listen on all interfaces
 PORT = 5000
 connections = []
-hostword = input("Set your hostword: ")
+try:
+    hostword = sys.argv[1]
+except:
+    hostword = input("Enter your hostword: ")
 
 def handle_client(conn, addr):
     conn.send("Enter hostword: ".encode())
@@ -22,8 +26,8 @@ def handle_client(conn, addr):
             if not data:
                 break
             msg = decrypt(data)                  # Decrypt guest message
-            print(f"[Guest {addr}]: {msg}")      # Display on host CLI
-            chat_log.append(f"[Guest {addr}]: {msg}")  # Add to host chat log
+            print(f"[{addr}]: {msg}")            # Display on host CLI
+            chat_log.append(f"[{addr}]: {msg}")  # Add to host chat log
             broadcast(data, conn)                # Send encrypted message to other clients
         except:
             break

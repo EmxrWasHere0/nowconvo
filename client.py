@@ -2,10 +2,16 @@
 import socket
 import threading
 from encryptor import encrypt, decrypt
+import sys
 
-HOST = input("Enter host IP: ")
-PORT = int(input("Enter host port: "))
-nickname = input("Enter your nickname: ")
+try:
+    HOST = sys.argv[1]
+    PORT = int(sys.argv[2])
+    nickname = sys.argv[3]
+except:
+    HOST = input("Enter host IP: ")
+    PORT = int(input("Enter host port: "))
+    nickname = input("Enter your nickname")
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect((HOST, PORT))
@@ -26,8 +32,10 @@ def receive():
 
 
 threading.Thread(target=receive, daemon=True).start()
-
-hostword = input("Enter hostword: ")
+try:
+    hostword = sys.argv[4]
+except:
+    hostword = input("Enter hostword: ")
 client.send(hostword.encode())
 
 while True:
