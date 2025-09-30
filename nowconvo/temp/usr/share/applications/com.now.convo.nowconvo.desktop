@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=NowConvo
+Exec=/usr/bin/nowconvo %F
+Icon=com_now_convo_nowconvo
+Categories=Utility;
+Comment=Private. Secure. Serverless.
